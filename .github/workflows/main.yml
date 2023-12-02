@@ -3,11 +3,11 @@ name: Deploy
 on:
   push:
     branches: 
-      - master
+      - main
 jobs:
   build:
   
-    runs-on: ubuntu-late
+    runs-on: ubuntu-latest
     strategy:
       max-parallel: 4
       matrix:
